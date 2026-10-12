@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillHub</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            width: 100%;
+            padding: 25px 8%;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #6c4ce8;
+        }
+
+        .btn-primary {
+            background: #7356e8;
+            color: white;
+            border: none;
+            padding: 13px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* ---------- HERO SECTION ---------- */
+
+        .hero {
+            min-height: 550px;
+            padding: 70px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            background: linear-gradient(
+                135deg,
+                #faf8ff,
+                #ffffff
+            );
+        }
+
+        .hero-content {
+            width: 50%;
+        }
+
+        .small-text {
+            display: inline-block;
+            background: #eee9ff;
+            color: #7356e8;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: #292929;
+        }
+
+        .hero h1 span {
+            display: block;
+            color: #7356e8;
+        }
+
+        .hero p {
+            color: #777;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 550px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-secondary {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 13px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* ---------- HERO IMAGE ---------- */
+
+        .hero-image {
+            width: 45%;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 25px;
+            display: block;
+        }
+
+        .badge {
+            position: absolute;
+            background: white;
+            padding: 13px 18px;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            font-size: 14px;
+        }
+
+        .badge-learn {
+            top: 70px;
+            left: -30px;
+        }
+
+        .badge-project {
+            bottom: 60px;
+            right: -25px;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 768px) {
+
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 50px 6%;
+                text-align: center;
+            }
+
+            .hero-content,
+            .hero-image {
+                width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                SkillHub
+            </div>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Courses</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Contact</a>
+
+                <button type="button" class="btn-primary">
+                    Get Started
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="small-text">
+                    Learn. Build. Grow.
+                </div>
+
+                <h1>
+                    Upgrade Your Skills
+                    <span>for a Brighter Future</span>
+                </h1>
+
+                <p>
+                    SkillHub provides high-quality, industry-relevant
+                    courses to help you learn, build real projects,
+                    and grow your career.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="btn-primary">
+                        Explore Courses
+                    </button>
+
+                    <button class="btn-secondary">
+                        Watch Video
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE IMAGE -->
+
+            <div class="hero-image">
+
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                     alt="Learning">
+
+                <div class="badge badge-learn">
+                    ✓ Learn Anywhere
+                </div>
+
+                <div class="badge badge-project">
+                    ✓ Build Projects
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

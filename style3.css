@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+}
+header{
+    width:100px;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+
+}
+#tophead{
+    background-color: antiquewhite;
+    padding: 5px 20px;
+
+}
+#tophead > div{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+}
+#bothead{
+    background-color: bisque;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+#bothead > nav{
+    display: flex;
+    gap: 20px;
+}
+#bothead > nav a{
+    text-decoration: none;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.banner div{
+    flex: 1;
+}
+#topbanner{
+    display: flex;
+}

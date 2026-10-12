@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: auto;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: whitesmoke;
+            color: #222;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .logo span {
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: grey;
+        }
+
+        .hero {
+            display: flex;
+        }
+
+        .hero-image img {
+            border-radius: 25px;
+            padding: 50px;
+            animation: float 3s ease-in-out infinite alternate;
+        }
+        @keyframes float {
+    
+            0%{
+                transform: translateY(30px);
+            }
+            25%{
+                transform: translateY(15%);
+            }
+            50%{
+                transform: translateY(7%);
+            }
+            75%{
+                transform: translateY(3px;
+            }
+        }
+        .hero-image span1{
+            position: absolute;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><span>Skill</span>Hub</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Courses</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Contact</a>
+                <button type="button" class="btn-primary">Get Started</button>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="small-text"> Learn. Build. Grow.</div>
+                <h1>Upgrade Your Skills for a 
+                    <span>Brighter Future</span>
+                </h1>
+
+                <p>
+                    SkillHub provides high-quality, industry-relevant courses to help you learn, build real projects,
+                    and grow your career.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn-primary">Explore Courses</button>
+                    <button class="btn-secondary">Watch Video</button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://www.bing.com/th/id/OIP._vFhp4PlmDjOzFomMKxSwgHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=2&pid=ImgAns&rm=2"
+                    alt="image"  width="400px">
+                <span class="span1">Learn</span>
+                <span class="span2">build</span>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
